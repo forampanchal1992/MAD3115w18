@@ -1,5 +1,5 @@
 //
-//  WelcomeVC.swift
+//  LauncherVC.swift
 //  LoginRegister
 //
 //  Created by Jigisha Patel on 2018-02-21.
@@ -8,13 +8,8 @@
 
 import UIKit
 
-class WelcomeVC: UIViewController {
+class LauncherVC: UIViewController {
 
-    var welcomeTitle: String = "test"
-    
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationItem.title = self.welcomeTitle
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

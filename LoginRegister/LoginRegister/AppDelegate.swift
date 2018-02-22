@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  LoginRegister
 //
-//  Created by MacStudent on 2018-02-21.
-//  Copyright © 2018 Foram. All rights reserved.
+//  Created by Jigisha Patel on 2018-02-21.
+//  Copyright © 2018 JK. All rights reserved.
 //
 
 import UIKit
