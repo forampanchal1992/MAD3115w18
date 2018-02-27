@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Day_7_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Udg-nU-b3w">
+                                <rect key="frame" x="171" y="30" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vst-ud-ABF">
+                                <rect key="frame" x="16" y="82" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="btnStartAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CuP-EM-v0u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ML-56-3Xb">
+                                <rect key="frame" x="293" y="82" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="btnStopAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgH-xU-tnH"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tiger.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="y5W-54-Kij">
+                                <rect key="frame" x="16" y="190" width="323" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Jh3-EQ-jv7">
+                                <rect key="frame" x="16" y="144" width="323" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Happy"/>
+                                    <segment title="Angry"/>
+                                    <segment title="Sad"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="p1H-RJ-J2N"/>
+                                </connections>
+                            </segmentedControl>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="VLp-7b-3Lo">
+                                <rect key="frame" x="16" y="363" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="myStepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="mE9-GV-Hdk"/>
+                                </connections>
+                            </stepper>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Z4P-ZR-AFj">
+                                <rect key="frame" x="14" y="421" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="mySliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="4yP-q9-USq"/>
+                                    <action selector="myStepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="iPd-Kl-43I"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stepper Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCg-Vc-T4g">
+                                <rect key="frame" x="171" y="367" width="145" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="61a-he-NJm">
+                                <rect key="frame" x="16" y="475" width="298" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" red="1" green="0.2270749848375303" blue="0.19886468639437493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Progress Bar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAN-Im-ySR">
+                                <rect key="frame" x="113" y="495" width="112" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.29635492703667043" green="0.54704653563006045" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Slider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlH-4b-p1G">
+                                <rect key="frame" x="171" y="421" width="111" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4G-vX-bSI">
+                                <rect key="frame" x="107" y="552" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start Progress"/>
+                                <connections>
+                                    <action selector="btnStartProgressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YnA-3G-PcT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Udg-nU-b3w" id="DnU-YW-Hpw"/>
+                        <outlet property="imgMood" destination="y5W-54-Kij" id="OZo-4J-S5X"/>
+                        <outlet property="lblProgressView" destination="oAN-Im-ySR" id="0Er-jQ-cFP"/>
+                        <outlet property="lblSliderValue" destination="xlH-4b-p1G" id="mDp-73-Yqd"/>
+                        <outlet property="lblStepperValue" destination="rCg-Vc-T4g" id="wfs-aF-iha"/>
+                        <outlet property="moodSegment" destination="Jh3-EQ-jv7" id="e8g-Ue-qVU"/>
+                        <outlet property="myProgressView" destination="61a-he-NJm" id="cLN-Tf-H5K"/>
+                        <outlet property="mySlider" destination="Z4P-ZR-AFj" id="j2u-fp-3Ti"/>
+                        <outlet property="myStepper" destination="VLp-7b-3Lo" id="FpK-QX-m14"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tiger.jpeg" width="259" height="194"/>
+    </resources>
+</document>
