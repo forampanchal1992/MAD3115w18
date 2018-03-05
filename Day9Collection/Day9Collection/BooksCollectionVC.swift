@@ -9,12 +9,11 @@
 import UIKit
 
 
-
 class BooksCollectionVC: UICollectionViewController {
     
-    let booksTitle = ["The Alchemist","The Story of an Hour","Breaking Dawn","Calling","Emailing","Very Happy","A Jury of her Peers","The Last Leaf","Messaging","The Day I stopped Drinking","O Monte Clario","Red Queen","Sky Falling","The NeckLace","Whatsapp","The Wise & Otherwise"]
+    let booksTitles = ["The Alchemist", "The story of an Hour", "Breaking Dawn", "A Jury of her Peers", "The Last Leaf", "The Day I Stopped Drinking Milk", "O Monte Cinco", "Red Queen", "The Sky is Falling", "The Necklace", "The Wise & Otherwise"]
     
-    let booksImages = ["Alchemist.jpeg","AnHour.jpeg","BreakingDawn.jpeg","Call.png","Email.png","happy.jpeg","Jury.jpeg","LastLeaf.jpeg","Message.png","Milk.jpeg","Mountain.jpeg","RedQueen.jpeg","Sky.jpeg","TheNecklace.jpeg","Whatsapp.png","WiseOtherwise.jpeg"]
+    let booksImages = ["Alchemist.jpeg", "AnHour.jpeg", "BreakingDawn.jpeg", "Jury.jpeg", "LastLeaf.jpeg", "Milk.jpeg", "Mountain.jpeg", "RedQueen.jpeg", "Sky.jpeg", "TheNecklace.jpeg", "WiseOtherwise.jpeg"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +22,8 @@ class BooksCollectionVC: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "myCell")
+       // self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "myCell")
+        
 
         // Do any additional setup after loading the view.
     }
@@ -53,7 +53,7 @@ class BooksCollectionVC: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return booksTitle.count
+        return booksTitles.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -61,16 +61,11 @@ class BooksCollectionVC: UICollectionViewController {
     
         // Configure the cell
         
-        cell.lblBookTitle.text = booksTitle[indexPath.row]
+        cell.lblBookTitle.text = booksTitles[indexPath.row]
         cell.imgBook.image = UIImage(named: booksImages[indexPath.row])
-        
-    
         return cell
     }
 
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("book: \(booksTitle[indexPath.row])")
-    }
     // MARK: UICollectionViewDelegate
 
     /*

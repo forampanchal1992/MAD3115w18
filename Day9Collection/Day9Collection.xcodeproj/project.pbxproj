@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B0DF5DF20494C6A00131CAC /* BooksCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0DF5DE20494C6A00131CAC /* BooksCollectionVC.swift */; };
+		9B0DF5E32049552200131CAC /* BooksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0DF5E22049552200131CAC /* BooksCell.swift */; };
+		9B47775A204D3AF4000FDE0F /* ContactsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B477759204D3AF4000FDE0F /* ContactsTVC.swift */; };
+		9B47775C204D3B38000FDE0F /* ContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47775B204D3B38000FDE0F /* ContactsCell.swift */; };
+		9B47775E204D5393000FDE0F /* ContactDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47775D204D5393000FDE0F /* ContactDetailVC.swift */; };
 		9B92736320493F760062E8BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B92736220493F760062E8BE /* AppDelegate.swift */; };
 		9B92736520493F760062E8BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B92736420493F760062E8BE /* ViewController.swift */; };
 		9B92736820493F760062E8BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B92736620493F760062E8BE /* Main.storyboard */; };
@@ -33,11 +38,14 @@
 		9B92739E204947540062E8BE /* TheNecklace.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B92738B204947530062E8BE /* TheNecklace.jpeg */; };
 		9B92739F204947540062E8BE /* Mountain.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B92738C204947530062E8BE /* Mountain.jpeg */; };
 		9B9273A0204947540062E8BE /* Call.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B92738D204947530062E8BE /* Call.png */; };
-		9B9273A220494C230062E8BE /* BooksCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9273A120494C230062E8BE /* BooksCollectionVC.swift */; };
-		9B9273A420494C660062E8BE /* BooksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9273A320494C660062E8BE /* BooksCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B0DF5DE20494C6A00131CAC /* BooksCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksCollectionVC.swift; sourceTree = "<group>"; };
+		9B0DF5E22049552200131CAC /* BooksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksCell.swift; sourceTree = "<group>"; };
+		9B477759204D3AF4000FDE0F /* ContactsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTVC.swift; sourceTree = "<group>"; };
+		9B47775B204D3B38000FDE0F /* ContactsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCell.swift; sourceTree = "<group>"; };
+		9B47775D204D5393000FDE0F /* ContactDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailVC.swift; sourceTree = "<group>"; };
 		9B92735F20493F760062E8BE /* Day9Collection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day9Collection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B92736220493F760062E8BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B92736420493F760062E8BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,8 +74,6 @@
 		9B92738B204947530062E8BE /* TheNecklace.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TheNecklace.jpeg; sourceTree = "<group>"; };
 		9B92738C204947530062E8BE /* Mountain.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mountain.jpeg; sourceTree = "<group>"; };
 		9B92738D204947530062E8BE /* Call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Call.png; sourceTree = "<group>"; };
-		9B9273A120494C230062E8BE /* BooksCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksCollectionVC.swift; sourceTree = "<group>"; };
-		9B9273A320494C660062E8BE /* BooksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +133,11 @@
 				9B92737120493F760062E8BE /* Info.plist */,
 				9B92736920493F760062E8BE /* Day9Collection.xcdatamodeld */,
 				9B927379204944660062E8BE /* VideoVC.swift */,
-				9B9273A120494C230062E8BE /* BooksCollectionVC.swift */,
-				9B9273A320494C660062E8BE /* BooksCell.swift */,
+				9B0DF5DE20494C6A00131CAC /* BooksCollectionVC.swift */,
+				9B0DF5E22049552200131CAC /* BooksCell.swift */,
+				9B477759204D3AF4000FDE0F /* ContactsTVC.swift */,
+				9B47775B204D3B38000FDE0F /* ContactsCell.swift */,
+				9B47775D204D5393000FDE0F /* ContactDetailVC.swift */,
 			);
 			path = Day9Collection;
 			sourceTree = "<group>";
@@ -226,10 +235,13 @@
 			files = (
 				9B92737A204944660062E8BE /* VideoVC.swift in Sources */,
 				9B92736520493F760062E8BE /* ViewController.swift in Sources */,
-				9B9273A420494C660062E8BE /* BooksCell.swift in Sources */,
+				9B0DF5E32049552200131CAC /* BooksCell.swift in Sources */,
+				9B47775A204D3AF4000FDE0F /* ContactsTVC.swift in Sources */,
+				9B47775C204D3B38000FDE0F /* ContactsCell.swift in Sources */,
 				9B92736B20493F760062E8BE /* Day9Collection.xcdatamodeld in Sources */,
-				9B9273A220494C230062E8BE /* BooksCollectionVC.swift in Sources */,
+				9B0DF5DF20494C6A00131CAC /* BooksCollectionVC.swift in Sources */,
 				9B92736320493F760062E8BE /* AppDelegate.swift in Sources */,
+				9B47775E204D5393000FDE0F /* ContactDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
